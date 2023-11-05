@@ -1,0 +1,46 @@
+ <!--template1-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Transcript Generator</title>
+  </head>
+  <body>
+    <h1>YouTube Transcript Generator</h1>
+    <form action="/transcript" method="post">
+      <label for="video_url">YouTube Video URL:</label>
+      <input type="text" name="video_url" id="video_url">
+      <input type="submit" value="Generate Transcript">
+    </form>
+  </body>
+</html>
+
+ <!--template2-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Transcript Generator</title>
+  </head>
+  <body>
+    <h1>Transcript</h1>
+    <table>
+      {% for line in transcript %}
+      <tr>
+        <td>{{ line['timestamp'] }}</td>
+        <td>{{ line['text'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
+
+ <!--template3-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Transcript Generator</title>
+  </head>
+  <body>
+    <h1>Error</h1>
+    <p>There was an error generating the transcript.</p>
+  </body>
+</html>
