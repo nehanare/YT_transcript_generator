@@ -25,3 +25,9 @@ def transcript():
       except:
 
         return render_template('error.html')
+
+
+
+#for error
+if __name__ == '__main__':
+    app.run(debug=True)
