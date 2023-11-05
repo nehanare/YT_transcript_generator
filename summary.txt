@@ -1,0 +1,19 @@
+1. We will be using Python 3.x, so make sure you have Python 3.x installed on your system.
+Once Python is installed, install Flask, Pytube, and YouTube Transcript API.
+
+2. Create the Flask Application
+create a new file called app.py and import the necessary libraries.
+Next, create a new Flask application with the Flask class.
+
+3. Define two routes: / and /transcript.
+The / route is the home page of the web application. It displays an HTML form where the user can enter the URL of the YouTube video. The /transcript route is the route that generates the transcript for the video.
+
+4. Next, Create the HTML templates for the web pages. Create three templates: home.html, transcript.html, and error.html.
+
+5. Now test the web application. Save the app.py, home.html, transcript.html, and error.html files in the same directory, and run command python app.py in a terminal or command prompt:
+This command will start the Flask application, and you should see an output similar to the following:
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+By following the steps you should be able to create your own web application that generates transcripts for YouTube videos with timestamps.
+
+You can customize the web application by modifying the HTML templates or adding more functionality to the Python code.
